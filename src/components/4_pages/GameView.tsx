@@ -9,11 +9,17 @@ const GameView: React.FC<RouteComponentProps<IIdParams>> = ({ match }) => {
   const id = match.params.id
   console.log(id)
   const history = useHistory();
-  return (
-    <GameViewTP
-      id={id}
-      onClick={() => { history.push(`/answer/${id}`) }}
-    />
-  )
+  if (parseInt(id) !== 7) {
+    return (
+      <GameViewTP
+        id={id}
+        onClick={() => { history.push(`/answer/${id}`) }}
+      />
+    )
+  } else {
+    return (
+      <div>Loading</div>
+    )
+  }
 }
 export default GameView

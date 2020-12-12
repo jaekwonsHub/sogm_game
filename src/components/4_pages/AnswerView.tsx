@@ -10,13 +10,11 @@ const AnswerView: React.FC<RouteComponentProps<IIdParams>> = ({ match }) => {
   const id = match.params.id
   const nextId = parseInt(match.params.id) + 1
   const history = useHistory();
-  const nextQuestion = setTimeout((...args) => history.push(`/game/${nextId}`), 5000);
+
+  setTimeout((...args) => history.push(`/game/${nextId}`), 5000);
+
   return (
-    <AnswerViewTP
-      id={id}
-    >
-      {nextQuestion}
-    </AnswerViewTP>
+    <AnswerViewTP id={id} />
   )
 }
 export default AnswerView
