@@ -12,7 +12,7 @@ const GameView: React.FC<RouteComponentProps<IIdParams>> = ({ match }) => {
   return (
     <GameViewTP
       id={id}
-      onClick={() => { history.push("/answer/") }}
+      onClick={() => { history.push(`/answer/${id}`) }}
     />
   )
 }

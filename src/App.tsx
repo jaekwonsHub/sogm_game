@@ -9,7 +9,6 @@ function App() {
     <BrowserRouter>
       <Switch>
         <Route path="/" component={HomePage} exact={true} />
-        <Route path="/game/" component={GameView} exact={true} />
         <Route path="/game/:id" component={GameView} exact={true} />
         <Route path="/answer/:id" component={AnswerView} exact={true} />
         <Redirect path="*" to="/" />
