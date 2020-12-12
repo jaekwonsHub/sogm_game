@@ -59,7 +59,7 @@ const data = {
       id: "5",
       stage: 6,
       title: "6번째 스테이지 제목",
-      question: "6번째 질문",
+      question: "올해 크리스마스 파티로 알맞은 것은?",
       stageImageURL: "6번째 스테이지 이미지",
       selections: [
         { title: "마스크 벗고 클럽 파티", isCorrect: false },
