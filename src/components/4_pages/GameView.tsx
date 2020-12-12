@@ -1,10 +1,17 @@
 import GameViewTP from "../3_templates/GameViewTP"
-import { useHistory } from "react-router-dom"
+import { RouteComponentProps, useHistory } from "react-router-dom"
 
-const GameView = () => {
+interface IIdParams {
+  id: string;
+}
+
+const GameView: React.FC<RouteComponentProps<IIdParams>> = ({ match }) => {
+  const id = match.params.id
+  console.log(id)
   const history = useHistory();
   return (
     <GameViewTP
+      id={id}
       onClick={() => { history.push("/answer/") }}
     />
   )

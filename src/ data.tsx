@@ -1,7 +1,7 @@
 const data = {
   stages: [
     {
-      id: 0,
+      id: "0",
       stage: 1,
       question: "크리스마스는 누가 태어난 날일까요?",
       stageImageURL: "1번째 스테이지 이미지",
@@ -11,7 +11,7 @@ const data = {
       ]
     },
     {
-      id: 1,
+      id: "1",
       stage: 2,
       question: "예수님이 태어난 장소는?",
       stageImageURL: "2번째 스테이지 이미지",
@@ -21,7 +21,7 @@ const data = {
       ]
     },
     {
-      id: 2,
+      id: "2",
       stage: 3,
       question: "다음 중 예수님이 타셨던 동물은?",
       stageImageURL: "3번째 스테이지 이미지",
@@ -31,7 +31,7 @@ const data = {
       ]
     },
     {
-      id: 3,
+      id: "3",
       stage: 4,
       question: "크리스마스를 왜 'X-MAS'라고 할까요",
       stageImageURL: "4번째 스테이지 이미지",
@@ -41,7 +41,7 @@ const data = {
       ]
     },
     {
-      id: 4,
+      id: "4",
       stage: 5,
       question: "지금 흘러 나오고 있는 '기쁘다 OO오셨네' 빈 칸에 들어갈 가사는?",
       stageImageURL: "5번째 스테이지 이미지",
@@ -51,7 +51,7 @@ const data = {
       ]
     },
     {
-      id: 5,
+      id: "5",
       stage: 6,
       title: "6번째 스테이지 제목",
       question: "6번째 질문",
@@ -62,7 +62,7 @@ const data = {
       ]
     },
     {
-      id: 6,
+      id: "6",
       stage: 7,
       title: "7번째 스테이지 제목",
       question: "7번째 질문",
