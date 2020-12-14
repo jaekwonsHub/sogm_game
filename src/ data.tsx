@@ -7,7 +7,7 @@ const data = {
       stageImageURL: "1번째 스테이지 이미지",
       selections: [
         { title: "산타클로스 할아버지", isCorrect: false },
-        { title: "지저스 크라이스트 슈퍼스타", isCorrect: true },
+        { title: "지저스 크라이스트", isCorrect: true },
       ],
       answer: "크리스마스는 예수님을 뜻하는 크라이스트(CHRIST)와 MAS(예배)가 합쳐진 단어입니다."
     },

@@ -1,16 +1,18 @@
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
-import AnswerView from './components/4_pages/AnswerView';
-import GameView from './components/4_pages/GameView';
-import HomePage from './components/4_pages/Home';
+import Answer from './components/4_pages/Answer';
+import Game from './components/4_pages/Game';
+import Home from './components/4_pages/Home';
+import Result from './components/4_pages/Result';
 
 function App() {
 
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/" component={HomePage} exact={true} />
-        <Route path="/game/:id" component={GameView} exact={true} />
-        <Route path="/answer/:id" component={AnswerView} exact={true} />
+        <Route path="/" component={Home} exact={true} />
+        <Route path="/game/:id" component={Game} exact={true} />
+        <Route path="/answer/:id" component={Answer} exact={true} />
+        <Route path="/result" component={Result} exact={true} />
         <Redirect path="*" to="/" />
       </Switch>
     </BrowserRouter>
