@@ -5,13 +5,14 @@ import data from "../../ data"
 interface IGameViewTPProps {
   onClick?: any;
   id: string;
+  selected?: string;
 }
 
-const GameViewTP: FC<IGameViewTPProps> = ({ onClick, id }) => {
+const GameViewTP: FC<IGameViewTPProps> = ({ onClick, id, selected }) => {
   const stage = data.stages.filter(e => e.id === id)[0];
   return (
     <Box width="100%" display="flex" flexDir="column" alignItems="center" justifyContent="center">
-      <Box width="100%" height="100vh" maxW="720px" display="flex" flexDir="column" alignItems="center" justifyContent="flex-start" paddingTop="30px">
+      <Box width="80%" height="100vh" maxW="720px" display="flex" flexDir="column" alignItems="center" justifyContent="flex-start" paddingTop="30px">
         <Text fontSize="80px" margin="">Q{stage.stage}</Text>
         <Text fontSize="30px" margin="20px">{stage.question}</Text>
         <Img border="1px solid" width="80%" height="40vh" />

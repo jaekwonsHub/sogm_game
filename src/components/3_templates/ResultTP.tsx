@@ -7,16 +7,16 @@ const ResultTP = () => {
 
   return (
     <Box display="flex" flexDir="column" alignItems="center" justifyContent="center">
-      <Text>
+      <Text marginTop="10vh" fontSize="25px">
         당신은
       </Text>
-      <Text>
+      <Text fontSize="60px" margin="">
         프로 크잘알
       </Text>
       <Text>
         아니 어쩜 이리 잘 알고 있는 것이죠?
       </Text>
-      <Text>
+      <Text fontSize="60px">
         7점
       </Text>
       <ResultTexts />

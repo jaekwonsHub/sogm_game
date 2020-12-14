@@ -13,6 +13,9 @@ const ResultTexts = () => {
         <Text margin="">
           (오해하지 마세요,전도하려는거 맞아요~)
       </Text>
+        <Box width="50px" height="50px" border="1px solid" margin="30px">
+          Icon
+        </Box>
       </Box>
       <Box display="flex" flexDir="column" alignItems="center" justifyContent="center" marginBottom="20px">
         <Text margin="">
