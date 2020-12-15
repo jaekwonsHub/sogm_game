@@ -1,4 +1,4 @@
-import { Box, Text } from "@chakra-ui/react"
+import { Box, Text, Button } from "@chakra-ui/react"
 
 const LoadingViewTP = () => {
   return (
@@ -17,6 +17,7 @@ const LoadingViewTP = () => {
           천사 GIF 자리
       </Box>
         <Text>점수 계산중...</Text>
+        <Button isLoading={true} bgColor="" width="30px" height="30px">?</Button>
       </Box>
     </Box>
   )

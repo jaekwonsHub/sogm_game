@@ -26,10 +26,10 @@ const AnswerViewTP: React.FC<IAnswerViewTPProps> = ({ id }) => {
           </Box>
           <Box width="80%" border="1px dashed" />
           <Box width="70%" height="60vh" display="flex" flexDir="column" justifyContent="flex-start" alignItems="center">
-            <Text fontSize={["16px", "20px", "25xp", "30px"]} marginTop="30px">{stage.answer[0]}</Text>
-            <Text fontSize={["16px", "20px", "25xp", "30px"]} marginTop="">{stage.answer[1]}</Text>
-            <Text fontSize={["16px", "20px", "25xp", "30px"]} marginTop="">{stage.answer[2]}</Text>
-            <Text fontSize={["16px", "20px", "25xp", "30px"]} marginTop="">{stage.answer[3]}</Text>
+            <Text fontSize={["12px", "22px", "25xp", "30px"]} marginTop="30px">{stage.answer[0]}</Text>
+            <Text fontSize={["12px", "22px", "25xp", "30px"]} marginTop="">{stage.answer[1]}</Text>
+            <Text fontSize={["12px", "22px", "25xp", "30px"]} marginTop="">{stage.answer[2]}</Text>
+            <Text fontSize={["12px", "22px", "25xp", "30px"]} marginTop="">{stage.answer[3]}</Text>
           </Box>
         </Box>
       </Box>

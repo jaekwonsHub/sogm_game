@@ -1,6 +1,8 @@
-import { Box, Text } from "@chakra-ui/react"
+import { Box, Button, Text } from "@chakra-ui/react"
+import { CopyToClipboard } from "react-copy-to-clipboard"
 
 const ResultLink = () => {
+  const url = "https://sogmgame.web.app/"
   return (
     <Box display="flex" flexDir="column" alignItems="center" justifyContent="center" marginTop="10vh" color="#ffffff">
       <Text>너도 했으면 좋겠다~</Text>
@@ -9,9 +11,11 @@ const ResultLink = () => {
         <Box width="100px" height="100px" border="1px solid" borderRadius="50%" display="flex" alignItems="center" justifyContent="center" margin="5px">
           카카오톡
         </Box>
-        <Box width="100px" height="100px" border="1px solid" borderRadius="50%" display="flex" alignItems="center" justifyContent="center" margin="5px">
-          URL 복사
-        </Box>
+        <CopyToClipboard text={url}>
+          <Button width="100px" height="100px" color="#ffffff" bgColor="#660210" border="1px solid" borderRadius="50%" display="flex" alignItems="center" justifyContent="center" margin="5px" onClick={e => { alert("URL이 복사되었습니다.") }} >
+            URL 복사
+          </Button>
+        </CopyToClipboard>
       </Box>
     </Box>
   )

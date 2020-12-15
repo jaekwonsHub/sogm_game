@@ -1,7 +1,6 @@
 import GameViewTP from "../3_templates/GameViewTP"
 import { RouteComponentProps, useHistory } from "react-router-dom"
 import LoadingView from "./Loading"
-import { useState } from "react"
 
 interface IIdParams {
   id: string;

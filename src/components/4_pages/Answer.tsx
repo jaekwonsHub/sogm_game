@@ -10,7 +10,7 @@ const Answer: React.FC<RouteComponentProps<IIdParams>> = ({ match }) => {
   const nextId = parseInt(match.params.id) + 1
   const history = useHistory();
 
-  // setTimeout((...args) => history.push(`/game/${nextId}`), 5000);
+  setTimeout((...args) => history.push(`/game/${nextId}`), 5000);
 
   return (
     <AnswerViewTP id={id} />

@@ -5,6 +5,7 @@ import ResultTexts from "../2_organism/ResultTexts"
 
 const ResultTP = () => {
   const texts = ["프로", "크잘알"]
+
   return (
     <Box display="flex" flexDir="column" alignItems="center" justifyContent="center" bgColor="#660210">
       <Text marginTop="10vh" fontSize="25px" color="#ffffff">
