@@ -9,7 +9,6 @@ interface IAnswerViewTPProps {
 
 const AnswerViewTP: React.FC<IAnswerViewTPProps> = ({ id }) => {
   const stage = data.stages.filter(e => e.id === id)[0];
-
   return (
     <Box display="flex" height="97vh" flexDir="column" alignItems="center" justifyContent="center" bgColor="#003366">
       <Box width="80%" height="100vh" maxW="720px" display="flex" flexDir="column" alignItems="center" justifyContent="flex-start" paddingTop={["35px", "35px", "60px", "60px"]}>
@@ -22,11 +21,15 @@ const AnswerViewTP: React.FC<IAnswerViewTPProps> = ({ id }) => {
             <Text fontSize={["15px", "18px", "20xp", "25px"]}>정답은</Text>
           </Box>
           <Box width="100%" height="25vh" display="flex" flexDir="column" justifyContent="flex-start" alignItems="center">
-            <Text margin="" fontSize={["20px", "25px", "30xp", "40px"]}>{stage.selections.filter(e => e.isCorrect === true)[0].title}</Text>
+            <Text margin="" fontSize={["20px", "25px", "30xp", "40px"]}>{stage.selections.filter(e => e.isCorrect === true)[0].title[0]}</Text>
+            <Text margin="" fontSize={["20px", "25px", "30xp", "40px"]}>{stage.selections.filter(e => e.isCorrect === true)[0].title[1]}</Text>
           </Box>
           <Box width="80%" border="1px dashed" />
           <Box width="70%" height="60vh" display="flex" flexDir="column" justifyContent="flex-start" alignItems="center">
-            <Text fontSize={["16px", "20px", "25xp", "30px"]} marginTop="30px">{stage.answer}</Text>
+            <Text fontSize={["16px", "20px", "25xp", "30px"]} marginTop="30px">{stage.answer[0]}</Text>
+            <Text fontSize={["16px", "20px", "25xp", "30px"]} marginTop="">{stage.answer[1]}</Text>
+            <Text fontSize={["16px", "20px", "25xp", "30px"]} marginTop="">{stage.answer[2]}</Text>
+            <Text fontSize={["16px", "20px", "25xp", "30px"]} marginTop="">{stage.answer[3]}</Text>
           </Box>
         </Box>
       </Box>
