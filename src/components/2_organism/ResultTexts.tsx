@@ -2,7 +2,7 @@ import { Box, Text } from "@chakra-ui/react"
 
 const ResultTexts = () => {
   return (
-    <Box display="flex" flexDir="column" alignItems="center" justifyContent="center">
+    <Box display="flex" flexDir="column" alignItems="center" justifyContent="center" color="#ffffff">
       <Box display="flex" flexDir="column" alignItems="center" justifyContent="center" marginBottom="20px">
         <Text margin="">
           혹시 예수님이

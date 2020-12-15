@@ -3,7 +3,7 @@ import { Box, Text } from "@chakra-ui/react"
 const ResultBottom = () => {
   return (
     <Box >
-      <Box display="flex" flexDir="column" alignItems="center" justifyContent="center" margin="10vh">
+      <Box display="flex" flexDir="column" alignItems="center" justifyContent="center" margin="10vh" color="#ffffff">
         <Text fontSize="25px" margin="">만든이들</Text>
         <Text>홍보 / 진행</Text>
         <Box display="flex" alignItems="center" justifyContent="center">
