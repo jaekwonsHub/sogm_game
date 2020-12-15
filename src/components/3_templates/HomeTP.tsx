@@ -12,7 +12,7 @@ const HomeTP: FunctionComponent<IHomeTPProps> = ({
 }) => {
 
   return (
-    <Box width="100%" height="100vh" display="flex" alignItems="center" justifyContent="center" bgColor="#006620">
+    <Box width="100%" height="97vh" display="flex" alignItems="center" justifyContent="center" bgColor="#006620">
       <Box width="100%" maxW="1000px" height="100vh" display="flex" justifyContent="center" alignItems="center" flexDir="column">
         <Text fontSize="20px" color="#000000">2020성탄특집</Text>
         <Text fontSize="70px" margin="" color="#006620">크잘알</Text>

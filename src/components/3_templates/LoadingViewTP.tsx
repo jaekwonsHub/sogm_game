@@ -2,7 +2,7 @@ import { Box, Text } from "@chakra-ui/react"
 
 const LoadingViewTP = () => {
   return (
-    <Box display="flex" height="100vh" flexDir="column" justifyContent="center" alignItems="center" width="100%" bgColor="#006620" >
+    <Box display="flex" height="97vh" flexDir="column" justifyContent="center" alignItems="center" width="100%" bgColor="#006620" >
       <Box display="flex" height="100vh" flexDir="column" justifyContent="center" alignItems="center" width="100%" maxW="720px">
         <Text margin="5px" fontSize="27px">
           당신의
