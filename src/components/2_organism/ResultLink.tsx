@@ -1,6 +1,7 @@
 import { Box, Button, Text } from "@chakra-ui/react"
 import { CopyToClipboard } from "react-copy-to-clipboard"
 
+
 const ResultLink = () => {
   const url = "https://sogmgame.web.app/"
   return (
