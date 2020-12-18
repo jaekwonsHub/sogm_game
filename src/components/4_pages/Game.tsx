@@ -1,8 +1,7 @@
 import GameViewTP from "../3_templates/GameViewTP"
 import { RouteComponentProps, useHistory } from "react-router-dom"
 import LoadingView from "./Loading"
-import { useState } from "react"
-
+import data from "../../ data"
 
 interface IIdParams {
   id: string;
@@ -11,20 +10,22 @@ interface IIdParams {
 
 const Game: React.FC<RouteComponentProps<IIdParams>> = ({ match }) => {
   const id = match.params.id
-  console.log(id)
   const history = useHistory();
-  const [count, setCount] = useState(0);
-  const [check, setCheck] = useState();
+  const stage = data.stages.filter(e => e.id === id)[0];
 
   if (parseInt(id) !== 7) {
-    const onClick = () => {
-      history.push(`/answer/${id}`)
-
+    const onClick = (index: any) => {
+      const correct = stage.selections[index].isCorrect
+      history.push(`/answer/${id}?isCorrect=${correct}`)
+      if (correct === '0') {
+        data.correctCount += 1;
+      }
     }
     return (
       <GameViewTP
         id={id}
         onClick={onClick}
+
       />
     )
   } else {
