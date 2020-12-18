@@ -18,8 +18,8 @@ var data = {
       question: ["예수님이", "태어난 장소는?"],
       stageImageURL: "2번째 스테이지 이미지",
       selections: [
-        { title: ["냄새나는 마굿간"], isCorrect: "0" },
-        { title: ["율제병원", "VIP산부인과"], isCorrect: "1" },
+        { title: ["냄새나는", "마굿간"], isCorrect: "0" },
+        { title: ["율제병원 IP산부인과"], isCorrect: "1" },
       ],
       answer: ["예수님은 우리를", "위해서 가장 낮은 곳으로", " 오셨어요."]
     },
@@ -37,7 +37,7 @@ var data = {
     {
       id: "3",
       stage: 4,
-      question: ["크리스마스를", "왜 'X-MAS'라고 할까요"],
+      question: ["크리스마스를 'X-MAS'라고", "하는데요 왜 'X'를 쓸까요?"],
       stageImageURL: "4번째 스테이지 이미지",
       selections: [
         { title: ["크리스마스에는 구여친/구남친이", "생각나기 때문에"], isCorrect: "1" },

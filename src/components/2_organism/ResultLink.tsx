@@ -1,14 +1,12 @@
 import { Box, Button, Text } from "@chakra-ui/react"
 import { CopyToClipboard } from "react-copy-to-clipboard"
-import Snowfall from "react-snowfall";
-import shareImage from "../../images/shareImage.png"
 
 declare const Kakao: any;
 
-// initializeKakaotalk은 SDK 초기화를 위해 한 번만 호출되어야 합니다.
-
 const onClick = () => {
   const _window: any = window;
+  const url = process.env.PUBLIC_URL + '/images/shareImage.png'
+  alert(url)
   if (_window.Kakao) {
     const Kakao = _window.Kakao
     console.log(Kakao)
@@ -17,17 +15,16 @@ const onClick = () => {
       content: {
         title: "크잘알 모의고사",
         description: '크잘알,태그,태그,태그',
-        imageUrl:
-          shareImage,
+        imageUrl: url,
         link: {
-          mobileWebUrl: "https://localhost:3000/",
+          mobileWebUrl: "https://sogmgame.web.app/",
           androidExecParams: 'test',
         },
       },
 
       buttons: [
         {
-          title: '웹으로 이동',
+          title: '모의고사 풀러가기',
           link: {
             mobileWebUrl: "https://sogmgame.web.app/",
           },

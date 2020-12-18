@@ -1,4 +1,4 @@
-import { Box, Button } from "@chakra-ui/react"
+import { Text, Box, Button } from "@chakra-ui/react"
 import { FunctionComponent } from "react"
 
 interface IButtonFormProps {
@@ -6,8 +6,10 @@ interface IButtonFormProps {
 }
 const ButtonForm: FunctionComponent<IButtonFormProps> = ({ children, onClick }) => {
   return (
-    <Box width="100%" display="flex" justifyContent="center" onClick={onClick}>
-      <Button bgColor="white" border="4px solid" borderColor="#000000" margin="40px" width="65%" height="10vh" color="#000000" fontSize="17px">{children}</Button>
+    <Box width="90%" display="flex" justifyContent="center" onClick={onClick}>
+      <Button bgColor="white" border="4px solid" borderColor="#000000" marginTop="5vh" width="65%" height="11vh" >
+        <Text color="#000000" fontSize={[20, 23, 27, 30]} fontWeight={500}>{children}</Text>
+      </Button>
     </Box>
   )
 }
