@@ -62,7 +62,7 @@ const data = {
       question: ["올해 크리스마스 파티로", "알맞은 것은?"],
       stageImageURL: "6번째 스테이지 이미지",
       selections: [
-        { title: ["마스크 벗고", "클럽 파티"], isCorrect: false },
+        { title: ["마스크 벗고 클럽 파티"], isCorrect: false },
         { title: ["친구들과 ", "랜선파티"], isCorrect: true },
       ],
       answer: ["코로나 제발 꺼져!"]

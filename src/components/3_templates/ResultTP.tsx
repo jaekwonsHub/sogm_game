@@ -18,12 +18,6 @@ const ResultTP = () => {
           </Text>
         ))}
       </Box>
-      <Text color="#ffffff">
-        아니 어쩜 이리 잘 알고 있는 것이죠?
-      </Text>
-      <Text fontSize="60px" color="#ffffff">
-        7점
-      </Text>
       <ResultTexts />
       <ResultLink />
       <ResultBottom />

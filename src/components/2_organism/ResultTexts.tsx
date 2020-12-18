@@ -2,13 +2,13 @@ import { Box, Text } from "@chakra-ui/react"
 
 const ResultTexts = () => {
   return (
-    <Box display="flex" flexDir="column" alignItems="center" justifyContent="center" color="#ffffff">
+    <Box display="flex" flexDir="column" alignItems="center" justifyContent="center" color="#ffffff" marginTop="50px">
       <Box display="flex" flexDir="column" alignItems="center" justifyContent="center" marginBottom="20px">
         <Text margin="">
-          혹시 예수님이
+          문제를 풀고 나니까 왠지 막
       </Text>
         <Text margin="">
-          막 친근하고 그러지 않으세요?
+          예수님이 친근하고 그러지 않으세요?
       </Text>
         <Text margin="">
           (오해하지 마세요,전도하려는거 맞아요~)
