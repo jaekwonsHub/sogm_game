@@ -4,13 +4,6 @@ import ResultLink from "../2_organism/ResultLink"
 import ResultTexts from "../2_organism/ResultTexts"
 import data from "../../ data"
 
-declare const Kakao: any;
-
-// initializeKakaotalk은 SDK 초기화를 위해 한 번만 호출되어야 합니다.
-const initializeKakaotalk = () => {
-  Kakao.init('YOUR_API_KEY');
-};
-
 const ResultTP = () => {
   const count = data.correctCount
   console.log(count)

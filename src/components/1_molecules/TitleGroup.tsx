@@ -9,7 +9,6 @@ const TitleGroup = () => {
       </Text>
       </Box>
       <Text fontSize="30px" fontWeight={800} >
-        
       </Text>
     </Box>
   )

@@ -2,7 +2,7 @@ import { Box, Text } from "@chakra-ui/react"
 
 const ResultTexts = () => {
   return (
-    <Box display="flex" flexDir="column" alignItems="center" justifyContent="center" color="#ffffff" marginTop="50px">
+    <Box width="100%" display="flex" flexDir="column" alignItems="center" justifyContent="center" color="#ffffff" marginTop="50px">
       <Box display="flex" flexDir="column" alignItems="center" justifyContent="center" marginBottom="20px">
         <Text margin="">
           문제를 풀고 나니까 왠지 막
