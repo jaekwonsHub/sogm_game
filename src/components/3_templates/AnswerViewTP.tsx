@@ -35,7 +35,7 @@ const AnswerViewTP: React.FC<IAnswerViewTPProps> = ({ id, onClick, isCorrect }) 
           </Box>
           <Box width="80%" border="1px dashed" />
           <Box width="75%" height="55vh" display="flex" flexDir="column" justifyContent="flex-start" alignItems="center">
-            <Text fontSize={[18, 20, 23, 30]} fontWeight={500} marginTop="30px">{stage.answer[0]}</Text>
+            <Text fontSize={[18, 20, 23, 30]} fontWeight={500} marginTop="3vh">{stage.answer[0]}</Text>
             <Text fontSize={[18, 20, 23, 30]} fontWeight={500} marginTop="">{stage.answer[1]}</Text>
             <Text fontSize={[18, 20, 23, 30]} fontWeight={500} marginTop="">{stage.answer[2]}</Text>
             <Text fontSize={[18, 20, 23, 30]} fontWeight={500} marginTop="">{stage.answer[3]}</Text>

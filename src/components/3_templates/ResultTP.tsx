@@ -1,4 +1,4 @@
-import { Box, Text, Button } from "@chakra-ui/react"
+import { Box, Text, Button, Image } from "@chakra-ui/react"
 import ResultBottom from "../2_organism/ResultBottom"
 import ResultLink from "../2_organism/ResultLink"
 import ResultTexts from "../2_organism/ResultTexts"
@@ -12,38 +12,48 @@ const ResultTP = () => {
   const onClick = () => {
     setOpened(!opened)
   }
-  const TitleFontSize = [65, 70, 100, 120]
+  const TitleFontSize = [62, 66, 95, 110]
   const subFontSize = [18, 20, 25, 30]
   return (
-    <Box display="flex" flexDir="column" alignItems="center" justifyContent="center" bgColor="#660210">
-      <Box display="flex" height="100vh" flexDir="column" alignItems="center" justifyContent="center">
-        <Text marginTop="10vh" fontSize="25px" color="#ffffff">
-          당신은
-      </Text>
-        {texts.map(text => (
-          <Text key={text + '-text-id'} fontSize={TitleFontSize} margin="" color="#ffffff">
-            {text}
+    <Box display="flex" flexDir="column" bgColor="#660210">
+      <Box display="flex" flexDir="column" >
+        <Box height="100vh" display="flex" alignItems="center" justifyContent="center" flexDir="column" color="#ffffff">
+          <Box zIndex="1" position="relative" width="80%" maxW="1000px" margin="20px 0px" height="40vh" display="flex" justifyContent="center" alignItems="center" flexDir="column">
+            <Text fontSize={[25, 35, 60, 70]} color="#005C1C">당신은</Text>
+            {texts.map(text => (
+              <Text lineHeight="100%" key={text + '-text-id'} fontSize={TitleFontSize} margin="" color="#FF0000">
+                {text}
+              </Text>
+            ))
+            }
+            <Image width="85%" minW="300px" position="absolute" zIndex="-1" src={process.env.PUBLIC_URL + "/images/textBackground.png"}></Image>
+          </Box>
+          <Box display="flex" flexDir="column" alignItems="center" justifyContent="center" margin="5vh">
+          </Box>
+          <Box display="flex" flexDir="column" alignItems="center" justifyContent="center">
+            <Text margin="" fontSize={subFontSize}>
+              문제를 풀고 나니까 왠지 막
           </Text>
-        ))
-        }
-        <Box display="flex" flexDir="column" alignItems="center" justifyContent="center" marginY="8vh" color="#ffffff">
-          <Text margin="" fontSize={subFontSize}>
-            문제를 풀고 나니까 왠지 막
+            <Text margin="" fontSize={subFontSize}>
+              예수님이 친근하고 그러지 않으세요?
           </Text>
-          <Text margin="" fontSize={subFontSize}>
-            예수님이 친근하고 그러지 않으세요?
+            <Text margin="" fontSize={subFontSize}>
+              (오해하지 마세요,전도하려는거 맞아요~)
           </Text>
-          <Text margin="" fontSize={subFontSize}>
-            (오해하지 마세요,전도하려는거 맞아요~)
-          </Text>
+          </Box>
+          <Box marginTop="10vh">
+            <Image src={process.env.PUBLIC_URL + "/images/downArrow.png"} />
+          </Box>
         </Box>
-        <Button onClick={onClick}>펼쳐보기</Button>
+        <Box display="flex" flexDir="column" alignItems="center" justifyContent="center" marginY="8vh" color="#ffffff">
+          <ResultTexts />
+          <ResultLink />
+        </Box>
+        <Button fontSize={[20, 25, 30, 35]} onClick={onClick} bgColor="#660210" marginBottom="30px" color="#ffffff">만든이들 보기</Button>
       </Box>
       {
         opened === false ? "" :
           <Box width="100%">
-            <ResultTexts />
-            <ResultLink />
             <ResultBottom />
           </Box>
       }
