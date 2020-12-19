@@ -1,5 +1,6 @@
 import { Box, Button, Text } from "@chakra-ui/react"
 import { CopyToClipboard } from "react-copy-to-clipboard"
+import { Link } from "react-router-dom";
 
 declare const Kakao: any;
 
@@ -8,7 +9,7 @@ const onClick = () => {
     objectType: 'feed',
     content: {
       title: '크잘알 능력고사',
-      description: '크잘알, 이미지, 아직,안바뀌었습니다.',
+      description: "크리스마스에 대해 얼마나 알고 있는지 알아볼까요?!",
       imageUrl:
         'http://mud-kage.kakao.co.kr/dn/NTmhS/btqfEUdFAUf/FjKzkZsnoeE4o19klTOVI1/openlink_640x640s.jpg',
       link: {
@@ -47,6 +48,7 @@ const ResultLink = () => {
           </Button>
         </CopyToClipboard>
       </Box>
+      <Link href="https://www.instagram.com/sogm/">로고자리</Link>
     </Box>
   )
 }

@@ -1,6 +1,16 @@
 import ReactDOM from 'react-dom';
 import App from './App';
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+
+const theme = createMuiTheme({
+  typography: {
+    fontFamily: "DOSGothic",
+  },
+});
 
 ReactDOM.render(
-  <App />, document.getElementById('root')
+  <MuiThemeProvider theme={theme}>
+    <App />
+  </MuiThemeProvider>
+  , document.getElementById('root')
 );

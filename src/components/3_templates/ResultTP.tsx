@@ -15,18 +15,20 @@ const ResultTP = () => {
   const TitleFontSize = [62, 66, 95, 110]
   const subFontSize = [18, 20, 25, 30]
   return (
-    <Box display="flex" flexDir="column" bgColor="#660210">
-      <Box display="flex" flexDir="column" >
-        <Box height="100vh" display="flex" alignItems="center" justifyContent="center" flexDir="column" color="#ffffff">
-          <Box zIndex="1" position="relative" width="80%" maxW="1000px" margin="20px 0px" height="40vh" display="flex" justifyContent="center" alignItems="center" flexDir="column">
-            <Text fontSize={[25, 35, 60, 70]} color="#005C1C">당신은</Text>
-            {texts.map(text => (
-              <Text lineHeight="100%" key={text + '-text-id'} fontSize={TitleFontSize} margin="" color="#FF0000">
-                {text}
-              </Text>
-            ))
-            }
-            <Image width="85%" minW="300px" position="absolute" zIndex="-1" src={process.env.PUBLIC_URL + "/images/textBackground.png"}></Image>
+    <Box width="100%" display="flex" flexDir="column" bgColor="#660210">
+      <Box width="100%" display="flex" flexDir="column" >
+        <Box width="100%" height="100vh" display="flex" alignItems="center" justifyContent="center" flexDir="column" color="#ffffff">
+          <Box display="flex" flexDir="column" justifyContent="center" alignItems="center" position="relative" width="80%">
+            <Image width="100%" maxW="1000px" zIndex="0" src={process.env.PUBLIC_URL + "/images/textBackground.png"} />
+            <Box height="50%" position="absolute" display="flex" flexDir="column" alignItems="center" justifyContent="center">
+              <Text fontSize={[25, 35, 60, 70]} color="#005C1C">당신은</Text>
+              {texts.map(text => (
+                <Text lineHeight="100%" key={text + '-text-id'} fontSize={TitleFontSize} margin="" color="#FF0000">
+                  {text}
+                </Text>
+              ))
+              }
+            </Box>
           </Box>
           <Box display="flex" flexDir="column" alignItems="center" justifyContent="center" margin="5vh">
           </Box>

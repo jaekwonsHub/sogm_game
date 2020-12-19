@@ -24,7 +24,7 @@ const AnswerViewTP: React.FC<IAnswerViewTPProps> = ({ id, onClick, isCorrect }) 
               ...땡!
             </Text>)
         }
-        <Box position="relative" width="100%" height="60vh" marginTop="15px" border="3px solid" display="flex" flexDir="column" alignItems="center" bgColor="#ffffff">
+        <Box position="relative" width="100%" height="60vh" marginTop="15px" border="5px solid" display="flex" flexDir="column" alignItems="center" bgColor="#ffffff">
           <Image top="-45px" left="30px" position="absolute" width="20%" src={process.env.PUBLIC_URL + "/images/angel.png"} />
           <Box height="20vh" marginBottom="1vh" display="flex" flexDir="column" justifyContent="flex-end" alignItems="center">
             <Text fontWeight="500" fontSize={["20px", "25px", "30xp", "35px"]}>정답은</Text>

@@ -12,19 +12,22 @@ const HomeTP: FunctionComponent<IHomeTPProps> = ({
 }) => {
 
   return (
-    <Box width="100%" height="100vh" display="flex" alignItems="center" justifyContent="center" bgColor="#006620">
-      <Box width="100%" maxW="720px" height="100vh" marginTop="30px" display="flex" justifyContent="center" alignItems="center" flexDir="column">
-        <HomeTitle />
-        <Box position="relative" width="80%" margin="20px 0px" height="40vh" display="flex" justifyContent="center" alignItems="center" flexDir="column">
-          <Text zIndex="1" fontSize={[60, 70, 80, 90]} fontWeight="700" margin="" color="#FF0000">크잘알</Text>
-          <Text zIndex="1" fontSize={[40, 60, 70, 80]} fontWeight="700" margin="" color="#005C1C">능력고사</Text>
-          <Image width="80%" minW="300px" position="absolute" zIndex="0" src={process.env.PUBLIC_URL + "/images/textBackground.png"}></Image>
+    <Box width="100%" height="100vh" display="flex" flexDir="column" alignItems="center" justifyContent="space-around" bgColor="#006620">
+      <HomeTitle />
+      <Box display="flex" flexDir="column" justifyContent="center" alignItems="center" position="relative" width="80%">
+        <Image width="100%" maxW="500px" zIndex="0" src={process.env.PUBLIC_URL + "/images/textBackground.png"} />
+        <Box height="50%" position="absolute" display="flex" flexDir="column" alignItems="center" justifyContent="center">
+          <Text fontSize={[60, 70, 80, 90]} fontWeight={500} color="#FF0000" lineHeight="5vh" marginTop="5vh">크잘알</Text>
+          <Text fontSize={[40, 40, 50, 60]} fontWeight={500} color="#005C1C" lineHeight="" margin="">능력고사</Text>
         </Box>
+      </Box>
+      <Box display="flex" flexDir="column" justifyContent="center" alignItems="center" >
         <Text fontSize="16px" fontWeight="500" color="#ffffff" >크리스마스에 대해</Text>
         <Text fontSize="16px" fontWeight="500" color="#ffffff" >얼마나 알고 있는지 알아볼까요?!</Text>
-        <ButtonForm onClick={onClick}>시작하기</ButtonForm>
       </Box>
-    </Box>
+      <ButtonForm onClick={onClick}>시작하기</ButtonForm>
+      <Text marginBottom="5vh" color="#ffffff" fontSize={[10, 15, 20, 25]}>*해당 테스트는 모바일에 최적화 되어있습니다.*</Text>
+    </Box >
   )
 }
 
