@@ -1,4 +1,4 @@
-import { Box, Text } from "@chakra-ui/react"
+import { Image, Box, Text } from "@chakra-ui/react"
 import data from "../../ data";
 
 interface IAnswerViewTPProps {
@@ -24,7 +24,8 @@ const AnswerViewTP: React.FC<IAnswerViewTPProps> = ({ id, onClick, isCorrect }) 
               ...땡!
             </Text>)
         }
-        <Box width="100%" height="60vh" marginTop="15px" border="3px solid" display="flex" flexDir="column" alignItems="center" bgColor="#ffffff">
+        <Box position="relative" width="100%" height="60vh" marginTop="15px" border="3px solid" display="flex" flexDir="column" alignItems="center" bgColor="#ffffff">
+          <Image top="-45px" left="30px" position="absolute" width="20%" src={process.env.PUBLIC_URL + "/images/angel.png"} />
           <Box height="20vh" marginBottom="1vh" display="flex" flexDir="column" justifyContent="flex-end" alignItems="center">
             <Text fontWeight="500" fontSize={["20px", "25px", "30xp", "35px"]}>정답은</Text>
           </Box>
@@ -34,10 +35,10 @@ const AnswerViewTP: React.FC<IAnswerViewTPProps> = ({ id, onClick, isCorrect }) 
           </Box>
           <Box width="80%" border="1px dashed" />
           <Box width="75%" height="55vh" display="flex" flexDir="column" justifyContent="flex-start" alignItems="center">
-            <Text fontSize={[18, 20, 23, 30]} fontWeight={500} marginTop="3vh">{stage.answer[0]}</Text>
-            <Text fontSize={[18, 20, 23, 30]} fontWeight={500} marginTop="">{stage.answer[1]}</Text>
-            <Text fontSize={[18, 20, 23, 30]} fontWeight={500} marginTop="">{stage.answer[2]}</Text>
-            <Text fontSize={[18, 20, 23, 30]} fontWeight={500} marginTop="">{stage.answer[3]}</Text>
+            <Text fontSize={[15, 20, 23, 30]} fontWeight={500} marginTop="2vh">{stage.answer[0]}</Text>
+            <Text fontSize={[15, 20, 23, 30]} fontWeight={500} marginTop="">{stage.answer[1]}</Text>
+            <Text fontSize={[15, 20, 23, 30]} fontWeight={500} marginTop="">{stage.answer[2]}</Text>
+            <Text fontSize={[15, 20, 23, 30]} fontWeight={500} marginTop="">{stage.answer[3]}</Text>
           </Box>
           <Box width="80%" border="1px dashed" />
           <Box height="25vh">
