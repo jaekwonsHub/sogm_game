@@ -4,35 +4,29 @@ import { CopyToClipboard } from "react-copy-to-clipboard"
 declare const Kakao: any;
 
 const onClick = () => {
-  const _window: any = window;
-  const url = process.env.PUBLIC_URL + '/images/shareImage.png'
-  alert(url)
-  if (_window.Kakao) {
-    const Kakao = _window.Kakao
-    console.log(Kakao)
-    Kakao.Link.sendDefault({
-      objectType: 'feed',
-      content: {
-        title: "크잘알 모의고사",
-        description: '크잘알,태그,태그,태그',
-        imageUrl: url,
+  Kakao.Link.sendDefault({
+    objectType: 'feed',
+    content: {
+      title: '크잘알 능력고사',
+      description: '크잘알, 이미지, 아직,안바뀌었습니다.',
+      imageUrl:
+        'http://mud-kage.kakao.co.kr/dn/NTmhS/btqfEUdFAUf/FjKzkZsnoeE4o19klTOVI1/openlink_640x640s.jpg',
+      link: {
+        mobileWebUrl: 'https://sogmgame.web.app',
+        androidExecParams: 'test',
+      },
+    },
+    buttons: [
+      {
+        title: '능력고사 참여하기',
         link: {
-          mobileWebUrl: "https://sogmgame.web.app/",
-          androidExecParams: 'test',
+          mobileWebUrl: 'https://sogmgame.web.app',
         },
       },
-
-      buttons: [
-        {
-          title: '모의고사 풀러가기',
-          link: {
-            mobileWebUrl: "https://sogmgame.web.app/",
-          },
-        }
-      ]
-    });
-  }
+    ]
+  });
 }
+
 
 const ResultLink = () => {
   const url = "https://sogmgame.web.app/"

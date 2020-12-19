@@ -1,5 +1,4 @@
 import { Image, Box, Text } from "@chakra-ui/react"
-import { relative } from "path"
 import { FunctionComponent } from "react"
 import ButtonForm from "../0_atoms/ButtonForm"
 import HomeTitle from "../1_molecules/HomeTitle"

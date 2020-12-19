@@ -6,7 +6,7 @@ const ResultBottom = () => {
       <Box display="flex" flexDir="column" alignItems="center" justifyContent="center" margin="5vh" color="#ffffff">
         <Text>홍보 / 진행</Text>
         <Box display="flex" alignItems="center" justifyContent="center">
-          <Box width="100px" display="flex" flexDir="column" alignItems="center" justifyContent="center" margin="10px">
+          <Box display="flex" flexDir="column" alignItems="center" justifyContent="center" margin="10px">
             <Image src={process.env.PUBLIC_URL + "/images/makers/hongGm.png"} />
             <Text>
               홍금
@@ -57,9 +57,7 @@ const ResultBottom = () => {
         </Box>
         <Box display="flex" flexDir="column" alignItems="center" justifyContent="center" margin="10px">
           <Image src={process.env.PUBLIC_URL + "/images/makers/jaekwon.png"} />
-          <Text>
-            개발 도움 : 강재권
-            </Text>
+          <Text>개발 도움 : 강재권</Text>
         </Box>
       </Box>
     </Box>
