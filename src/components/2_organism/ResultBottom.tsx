@@ -2,10 +2,10 @@ import { Image, Box, Text } from "@chakra-ui/react"
 
 const ResultBottom = () => {
   return (
-    <Box width="100%" >
-      <Box display="flex" flexDir="column" alignItems="center" justifyContent="center" margin="5vh" color="#ffffff">
-        <Text>홍보 / 진행</Text>
-        <Box display="flex" alignItems="center" justifyContent="center">
+    <Box width="100%" display="flex" flexDir="column" alignItems="center" justifyContent="center">
+      <Box maxW="500px" display="flex" flexDir="column" alignItems="center" justifyContent="center" margin="5vh" color="#ffffff">
+        <Text >홍보 / 진행</Text>
+        <Box width="70%" display="flex" alignItems="center" justifyContent="center">
           <Box display="flex" flexDir="column" alignItems="center" justifyContent="center" margin="10px">
             <Image src={process.env.PUBLIC_URL + "/images/makers/hongGm.png"} />
             <Text>
@@ -19,8 +19,8 @@ const ResultBottom = () => {
             </Text>
           </Box>
         </Box>
-        <Text>사운드 팀</Text>
-        <Box display="flex" alignItems="center" justifyContent="center">
+        <Text marginTop="4vh">사운드 팀</Text>
+        <Box width="70%" display="flex" alignItems="center" justifyContent="center">
           <Box display="flex" flexDir="column" alignItems="center" justifyContent="center" margin="10px">
             <Image src={process.env.PUBLIC_URL + "/images/makers/heeGm.png"} />
             <Text>
@@ -34,7 +34,7 @@ const ResultBottom = () => {
             </Text>
           </Box>
         </Box>
-        <Text>그래픽 팀</Text>
+        <Text marginTop="4vh">그래픽 팀</Text>
         <Box display="flex" alignItems="center" justifyContent="center">
           <Box display="flex" flexDir="column" alignItems="center" justifyContent="center" margin="10px">
             <Image src={process.env.PUBLIC_URL + "/images/makers/naGm.png"} />
@@ -55,9 +55,14 @@ const ResultBottom = () => {
             </Text>
           </Box>
         </Box>
-        <Box display="flex" flexDir="column" alignItems="center" justifyContent="center" margin="10px">
-          <Image src={process.env.PUBLIC_URL + "/images/makers/jaekwon.png"} />
-          <Text>개발 도움 : 강재권</Text>
+        <Text marginTop="4vh">개발 도움</Text>
+        <Box width="30%" display="flex" alignItems="center" justifyContent="center">
+          <Box display="flex" flexDir="column" alignItems="center" justifyContent="center" margin="10px">
+            <Image src={process.env.PUBLIC_URL + "/images/makers/jaeKwon.png"} />
+            <Text>
+              강재권
+            </Text>
+          </Box>
         </Box>
       </Box>
     </Box>

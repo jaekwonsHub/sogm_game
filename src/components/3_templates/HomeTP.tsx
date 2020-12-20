@@ -15,7 +15,7 @@ const HomeTP: FunctionComponent<IHomeTPProps> = ({
     <Box width="100%" height="100vh" display="flex" flexDir="column" alignItems="center" justifyContent="space-around" bgColor="#006620">
       <HomeTitle />
       <Box display="flex" flexDir="column" justifyContent="center" alignItems="center" position="relative" width="80%">
-        <Image width="100%" maxW="500px" zIndex="0" src={process.env.PUBLIC_URL + "/images/textBackground.png"} />
+        <Image border="5px solid #023014" width="100%" maxW="500px" zIndex="0" src={process.env.PUBLIC_URL + "/images/textBackground.png"} />
         <Box height="50%" position="absolute" display="flex" flexDir="column" alignItems="center" justifyContent="center">
           <Text fontSize={[60, 70, 80, 90]} fontWeight={500} color="#FF0000" lineHeight="5vh" marginTop="5vh">크잘알</Text>
           <Text fontSize={[40, 40, 50, 60]} fontWeight={500} color="#005C1C" lineHeight="" margin="">능력고사</Text>
@@ -27,6 +27,7 @@ const HomeTP: FunctionComponent<IHomeTPProps> = ({
       </Box>
       <ButtonForm onClick={onClick}>시작하기</ButtonForm>
       <Text marginBottom="5vh" color="#ffffff" fontSize={[10, 15, 20, 25]}>*해당 테스트는 모바일에 최적화 되어있습니다.*</Text>
+
     </Box >
   )
 }
