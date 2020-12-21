@@ -48,14 +48,14 @@ const ResultLink = () => {
           </Button>
         </CopyToClipboard>
       </Box>
-      <Box marginY="7vh" display="flex" flexDir="column" alignItems="center" justifyContent="center">
-        <Text fontSize={[12, 20, 25, 30]}>sogm에 대하여 더 궁금한게 있다면,</Text>
-        <Text fontSize={[12, 20, 25, 30]}>아래 로고를 눌러주세요!</Text>
-      </Box>
-      <Box width="20%">
+      <Box width="20%" marginTop="10vh">
         <Link href="https://www.instagram.com/sogm/" >
           <Image src={process.env.PUBLIC_URL + "/images/sogmLogo.png"} />
         </Link>
+      </Box>
+      <Box marginY="3vh" display="flex" flexDir="column" alignItems="center" justifyContent="center">
+        <Text fontSize={[12, 20, 25, 30]}>sogm에 대하여 더 궁금한게 있다면,</Text>
+        <Text fontSize={[12, 20, 25, 30]}>로고를 눌러주세요!</Text>
       </Box>
     </Box>
   )

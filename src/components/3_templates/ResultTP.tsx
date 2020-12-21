@@ -3,7 +3,7 @@ import ResultBottom from "../2_organism/ResultBottom"
 import ResultLink from "../2_organism/ResultLink"
 import ResultTexts from "../2_organism/ResultTexts"
 import data from "../../ data"
-import { useState } from "react"
+import React, { useState } from "react"
 
 const ResultTP = () => {
   const count = data.correctCount
@@ -20,7 +20,7 @@ const ResultTP = () => {
       <Box width="90%" display="flex" flexDir="column">
         <Box width="100%" height="100vh" display="flex" alignItems="center" justifyContent="center" flexDir="column" color="#ffffff">
           <Box display="flex" flexDir="column" justifyContent="center" alignItems="center" position="relative" width="80%">
-            <Image width="100%" maxW="1000px" zIndex="0" src={process.env.PUBLIC_URL + "/images/textBackground.png"} />
+            <Image border="5px solid #43030C" width="100%" maxW="1000px" zIndex="0" src={process.env.PUBLIC_URL + "/images/textBackground.png"} />
             <Box height="50%" position="absolute" display="flex" flexDir="column" alignItems="center" justifyContent="center">
               <Text fontSize={[25, 35, 60, 70]} color="#005C1C">당신은</Text>
               {texts.map(text => (
@@ -61,6 +61,9 @@ const ResultTP = () => {
             }} _hover={{ bg: "" }} fontSize={[17, 25, 30, 35]} margin="" onClick={onClick} bgColor="#660210" color="#ffffff">만든이들 보기</Button>
           {opened === true ? <Text marginBottom="30px"><Image src={process.env.PUBLIC_URL + "/images/downArrowOne.png"} /></Text> : ""}
         </Box>
+        <a href={process.env.PUBLIC_URL + "/images/test.png"} download="testImage" >
+          <Button>이미지 다운</Button>
+        </a>
       </Box>
       {
         opened === false ? "" :

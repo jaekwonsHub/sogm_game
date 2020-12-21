@@ -33,11 +33,11 @@ const AnswerViewTP: React.FC<IAnswerViewTPProps> = ({ id, onClick, isCorrect }) 
             <Text margin="" fontWeight="700" fontSize={["28px", "32px", "36xp", "40px"]}>{stage.selections.filter(e => e.isCorrect === "0")[0].title[1]}</Text>
           </Box>
           <Box width="80%" border="1px dashed" />
-          <Box width="75%" height="55vh" display="flex" flexDir="column" justifyContent="center" alignItems="center">
-            <Text fontSize={[14, 20, 23, 30]} fontWeight={500} marginTop="">{stage.answer[0]}</Text>
-            <Text fontSize={[14, 20, 23, 30]} fontWeight={500} marginTop="">{stage.answer[1]}</Text>
-            <Text fontSize={[14, 20, 23, 30]} fontWeight={500} marginTop="">{stage.answer[2]}</Text>
-            <Text fontSize={[14, 20, 23, 30]} fontWeight={500} marginTop="">{stage.answer[3]}</Text>
+          <Box width="95%" height="55vh" display="flex" flexDir="column" justifyContent="center" alignItems="center">
+            <Text fontSize={[18, 20, 23, 30]} fontWeight={500} marginTop="">{stage.answer[0]}</Text>
+            <Text fontSize={[18, 20, 23, 30]} fontWeight={500} marginTop="">{stage.answer[1]}</Text>
+            <Text fontSize={[18, 20, 23, 30]} fontWeight={500} marginTop="">{stage.answer[2]}</Text>
+            <Text fontSize={[18, 20, 23, 30]} fontWeight={500} marginTop="">{stage.answer[3]}</Text>
           </Box>
           <Box width="80%" border="1px dashed" />
           <Box height="25vh">

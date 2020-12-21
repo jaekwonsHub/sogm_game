@@ -10,8 +10,6 @@ interface IGameViewTPProps {
 
 const GameViewTP: FC<IGameViewTPProps> = ({ onClick, id }) => {
   const stage = data.stages.filter(e => e.id === id)[0];
-  console.log(stage)
-
   return (
     <Box width="100%" height="100vh" display="flex" flexDir="column" alignItems="center" justifyContent="center" bgColor="#006620">
       <Box width="84%" height="100vh" maxW="500px" display="flex" flexDir="column" alignItems="center" justifyContent="flex-start" paddingTop="2vh">
