@@ -48,15 +48,16 @@ const ResultLink = () => {
           </Button>
         </CopyToClipboard>
       </Box>
-      <Box width="20%" marginTop="10vh">
+      <Box marginTop="10vh" display="flex" flexDir="column" alignItems="center" justifyContent="center">
+        <Text fontSize={[25, 25, 40, 40]}>이벤트 중!!!</Text>
+        <Text fontSize={[15, 20, 25, 30]}>로고 터치!</Text>
+      </Box>
+      <Box width="20%" marginY="3vh" >
         <Link href="https://www.instagram.com/sogm/" >
           <Image src={process.env.PUBLIC_URL + "/images/sogmLogo.png"} />
         </Link>
       </Box>
-      <Box marginY="3vh" display="flex" flexDir="column" alignItems="center" justifyContent="center">
-        <Text fontSize={[12, 20, 25, 30]}>sogm에 대하여 더 궁금한게 있다면,</Text>
-        <Text fontSize={[12, 20, 25, 30]}>로고를 눌러주세요!</Text>
-      </Box>
+
     </Box>
   )
 }

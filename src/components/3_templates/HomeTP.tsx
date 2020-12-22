@@ -1,5 +1,5 @@
 import { Image, Box, Text } from "@chakra-ui/react"
-import { FunctionComponent } from "react"
+import React, { FunctionComponent, useState } from "react"
 import ButtonForm from "../0_atoms/ButtonForm"
 import HomeTitle from "../1_molecules/HomeTitle"
 
@@ -7,13 +7,26 @@ interface IHomeTPProps {
   onClick?: any;
 }
 
+
+const audio = document.getElementById('bgm_question') as HTMLAudioElement
+if (audio) {
+  audio.play()
+}
+
 const HomeTP: FunctionComponent<IHomeTPProps> = ({
   onClick
 }) => {
+  const [iconInterval, setIconInterval] = useState(false)
+  setInterval(() => setIconInterval(!iconInterval), 1000)
+
 
   return (
     <Box width="100%" height="100vh" display="flex" flexDir="column" alignItems="center" justifyContent="space-around" bgColor="#006620">
-      <HomeTitle />
+
+      <Box width="80%" display="flex" justifyContent="center" alignItems="center" position="relative">
+        {iconInterval === true ? <Image position="absolute" left="4vw" src={process.env.PUBLIC_URL + "/images/homeIcon.png"} /> : ""}
+        <HomeTitle />
+      </Box>
       <Box display="flex" flexDir="column" justifyContent="center" alignItems="center" position="relative" width="80%">
         <Image margin="3vh" border="5px solid #023014" width="100%" maxW="500px" zIndex="0" src={process.env.PUBLIC_URL + "/images/textBackground.png"} />
         <Box height="50%" position="absolute" display="flex" flexDir="column" alignItems="center" justifyContent="center">
