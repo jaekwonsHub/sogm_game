@@ -21,7 +21,7 @@ const HomeTP: FunctionComponent<IHomeTPProps> = ({
           <Text fontSize={[40, 40, 50, 60]} fontWeight={500} color="#005C1C" lineHeight="" margin="">테스트</Text>
         </Box>
       </Box>
-      <Box display="flex" flexDir="column" justifyContent="center" alignItems="center" >
+      <Box marginTop="3vh" display="flex" flexDir="column" justifyContent="center" alignItems="center" >
         <Text fontSize="16px" fontWeight="500" color="#ffffff" >크리스마스에 대해</Text>
         <Text fontSize="16px" fontWeight="500" color="#ffffff" >얼마나 알고 있는지 알아볼까요?!</Text>
       </Box>

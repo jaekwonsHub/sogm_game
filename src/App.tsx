@@ -17,8 +17,12 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         <ChakraProvider theme={theme} >
-          <audio id="bgm_question" src={process.env.PUBLIC_URL + "/sounds/questionSound.mp3"} loop />
-          <audio id="bgm_result" src={process.env.PUBLIC_URL + "/sounds/resultSound.mp3"} loop />
+          <audio id="bgm_question" loop >
+            <source src={process.env.PUBLIC_URL + "/sounds/questionSound.mp3"} type="audio/mpeg" />
+          </audio>
+          <audio id="bgm_result" loop >
+            <source src={process.env.PUBLIC_URL + "/sounds/resultSound.mp3"} type="audio/mpeg" />
+          </audio>
           <Switch>
             <Route path="/" component={Home} exact={true} />
             <Route path="/game/:id" component={Game} exact={true} />

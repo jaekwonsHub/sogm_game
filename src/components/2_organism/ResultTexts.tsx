@@ -2,12 +2,14 @@ import { Box, Text } from "@chakra-ui/react"
 
 const ResultTexts = () => {
   const fontSize = [18, 25, 30, 40]
+  const largeFont = [28, 36, 39, 47]
   const margin = "5px"
+  const topTextMargin = "3vh"
   const boxMargin = [20, 20, 24, 24]
   return (
     <Box width="100%" display="flex" flexDir="column" alignItems="center" justifyContent="center" color="#ffffff" marginTop="50px">
       <Box display="flex" flexDir="column" alignItems="center" justifyContent="center" marginBottom={boxMargin}>
-        <Text fontSize={fontSize} margin={margin}>
+        <Text fontSize={largeFont} marginBottom={topTextMargin}>
           올 한해 너무 힘드셨죠?
       </Text>
         <Text fontSize={fontSize} margin={margin}>
@@ -34,12 +36,15 @@ const ResultTexts = () => {
           그래도 크리스마스만 생각하면
         </Text>
         <Text fontSize={fontSize} margin={margin}>
-          왠지 신나고 힘이 나지않나요?
+          왠지 신나지 않나요? ㅎㅎ
         </Text>
       </Box>
       <Box display="flex" flexDir="column" alignItems="center" justifyContent="center" marginBottom={boxMargin}>
+        <Text fontSize={largeFont} margin={margin}>
+          맞아요!
+      </Text>
         <Text fontSize={fontSize} margin={margin}>
-          맞아요! 크리스마스는 그런
+          크리스마스는 그런
       </Text>
         <Text fontSize={fontSize} margin={margin}>
           기쁨이 시작된 날이에요^0^
@@ -48,36 +53,34 @@ const ResultTexts = () => {
       </Box>
       <Box display="flex" flexDir="column" alignItems="center" justifyContent="center" marginBottom={boxMargin}>
         <Text fontSize={fontSize} margin={margin}>
-          당신을 그 누구보다 사랑하셔서
+          예수님께서 당신을 누구보다
         </Text>
         <Text fontSize={fontSize} margin={margin}>
-          당신이 느끼는 기쁨부터
+          사랑하셔서 당신의
       </Text>
         <Text fontSize={fontSize} margin={margin}>
-          어려움과 슬픔까지
+          기쁨과 슬픔, 그리고
       </Text>
         <Text fontSize={fontSize} margin={margin}>
-          그 모든 것을 함께 하시기 위해
+          모든 것을 함께 하기 위해
       </Text>
         <Text fontSize={fontSize} margin={margin}>
-          직접 하늘에서 이 땅으로
+          직접 찾아오신 날이랍니다.
       </Text>
-        <Text fontSize={fontSize} margin={margin}>
-          찾아오신 날이에요.
-      </Text>
+
       </Box>
       <Box display="flex" flexDir="column" alignItems="center" justifyContent="center" marginBottom={boxMargin}>
         <Text fontSize={fontSize} margin={margin}>
-          당신에게 평안을 주시기 위해
+          당신에게 평안을 주기 위해
       </Text>
         <Text fontSize={fontSize} margin={margin}>
-          오신 예수님의 마음을
+          이 땅에 오신 예수님의 마음을
       </Text>
         <Text fontSize={fontSize} margin={margin}>
           느낄 수 있는 따뜻한
       </Text>
         <Text fontSize={fontSize} margin={margin}>
-          크리스마스가 되길 바래봅니다!
+          크리스마스가 되길 기도합니다!
       </Text>
       </Box>
     </Box>

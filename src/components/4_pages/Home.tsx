@@ -5,6 +5,7 @@ import { useHistory } from "react-router-dom"
 
 const Home = () => {
   const history = useHistory();
+
   const onClick = () => {
     const audio = document.getElementById('bgm_question') as HTMLAudioElement
     if (audio) {

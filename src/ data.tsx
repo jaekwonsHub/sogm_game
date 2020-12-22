@@ -21,12 +21,12 @@ var data = {
         { title: ["냄새나는 마굿간"], isCorrect: "0" },
         { title: ["율제병원 VIP산부인과"], isCorrect: "1" },
       ],
-      answer: ["때로는 초라한 우리와", "함께 하고 싶으셔서,", "누추한 곳으로 오셨습니다."]
+      answer: ["예수님은", "때로는 초라한 우리와", "함께 하고 싶으셔서,", "누추한 곳으로 오셨습니다."]
     },
     {
       id: "2",
       stage: 3,
-      question: ["X-MAS에서 X의 의미는?"],
+      question: ["X-MAS에서", "X의 의미는?"],
       stageImageURL: "4번째 스테이지 이미지",
       selections: [
         { title: ["구여친 혹은 구남친"], isCorrect: "1" },

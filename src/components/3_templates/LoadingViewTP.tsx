@@ -5,7 +5,7 @@ const LoadingViewTP = () => {
     <Box display="flex" height="100vh" flexDir="column" justifyContent="center" alignItems="center" width="100%" bgColor="#FFFFFF" >
       <Box width="80%" display="flex" height="100vh" flexDir="column" justifyContent="center" alignItems="center" maxW="720px">
         <Text margin="" fontSize="27px" fontWeight={600}>
-          크잘알 능력고사
+          크잘알 테스트
         </Text>
         <Text marginBottom="10px" fontSize="27px" fontWeight={600}>
           과연 그 결과는...?
