@@ -6,23 +6,15 @@ import HomeTitle from "../1_molecules/HomeTitle"
 interface IHomeTPProps {
   onClick?: any;
 }
-
-
-const audio = document.getElementById('bgm_question') as HTMLAudioElement
-if (audio) {
-  audio.play()
-}
-
 const HomeTP: FunctionComponent<IHomeTPProps> = ({
   onClick
 }) => {
+
   const [iconInterval, setIconInterval] = useState(false)
   setInterval(() => setIconInterval(!iconInterval), 1000)
 
-
   return (
     <Box width="100%" height="100vh" display="flex" flexDir="column" alignItems="center" justifyContent="space-around" bgColor="#006620">
-
       <Box width="80%" display="flex" justifyContent="center" alignItems="center" position="relative">
         {iconInterval === true ? <Image position="absolute" left="4vw" src={process.env.PUBLIC_URL + "/images/homeIcon.png"} /> : ""}
         <HomeTitle />

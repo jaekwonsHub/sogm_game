@@ -8,7 +8,10 @@ const Home = () => {
 
   const onClick = () => {
     history.push(`/game/0`)
-    
+    const audio = document.getElementById('bgm_question') as HTMLAudioElement
+    if (audio) {
+      audio.play()
+    }
   }
 
   return (

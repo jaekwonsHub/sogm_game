@@ -1,15 +1,15 @@
 import { Box, Text, Image } from "@chakra-ui/react"
 
 const ResultTexts = () => {
-  const fontSize = [18, 25, 30, 40]
-  const largeFont = [28, 36, 39, 47]
+  const fontSize = [16, 25, 30, 40]
+  const largeFont = [22, 27, 32, 45]
   const margin = "5px"
   const topTextMargin = "3vh"
   const boxMargin = [20, 20, 24, 24]
   return (
-    <Box width="100%" display="flex" flexDir="column" alignItems="center" justifyContent="center" color="#000000" marginTop="50px" bgColor="white">
+    <Box width="80%" border="5px solid #43030C" display="flex" flexDir="column" alignItems="center" justifyContent="center" color="#000000" marginTop="50px" bgColor="white">
       <Box width="85%" display="flex" flexDir="column" alignItems="center" justifyContent="center" marginBottom={boxMargin}>
-        <Image width="80%" marginY="8vh" src={process.env.PUBLIC_URL + "/images/resultLetterimage.png"} />
+        <Image width="80%" height="7vw" marginY="8vh" src={process.env.PUBLIC_URL + "images/resultLetterImage.png"} />
         <Text fontSize={largeFont} marginBottom={topTextMargin}>
           올 한해 너무 힘드셨죠?
       </Text>
@@ -103,8 +103,7 @@ const ResultTexts = () => {
         <Text fontSize={fontSize} margin={margin}>
           크리스마스가 되길 기도합니다!
       </Text>
-        <Box width="100%" height="1px" bgColor="#000000"></Box>
-        <Image width="80%" marginTop="8vh" src={process.env.PUBLIC_URL + "/images/resultLetterimage.png"} />
+        <Image width="80%" height="7vw" marginTop="8vh" src={process.env.PUBLIC_URL + "/images/resultLetterImage.png"} />
       </Box>
     </Box>
   )
