@@ -12,7 +12,7 @@ const onClick = () => {
       description: "크리스마스에 대해 얼마나 알고 있는지 알아볼까요?!",
       imageUrl: "https://christmastest.sogm.kr/" + process.env.PUBLIC_URL + "/images/linkImage.png",
       link: {
-        mobileWebUrl: "https://christmastest.sogm.kr/",
+        mobileWebUrl: "http://christmastest.sogm.kr/",
         androidExecParams: 'test',
       },
     },
@@ -20,7 +20,7 @@ const onClick = () => {
       {
         title: '테스트 참여하기',
         link: {
-          mobileWebUrl: "https://christmastest.sogm.kr/",
+          mobileWebUrl: "http://christmastest.sogm.kr/",
         },
       },
     ]
@@ -29,7 +29,7 @@ const onClick = () => {
 
 
 const ResultLink = () => {
-  const url = "https://christmastest.sogm.kr/"
+  const url = "http://christmastest.sogm.kr/"
 
   return (
     <Box width="100%" display="flex" flexDir="column" alignItems="center" justifyContent="center" marginTop="10vh" color="#ffffff">

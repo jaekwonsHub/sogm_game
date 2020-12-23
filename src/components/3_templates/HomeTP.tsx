@@ -11,15 +11,14 @@ const HomeTP: FunctionComponent<IHomeTPProps> = ({
 }) => {
 
   const [iconInterval, setIconInterval] = useState(false)
-  setInterval(() => setIconInterval(!iconInterval), 1000)
+  setInterval(() => setIconInterval(!iconInterval), 500)
 
   return (
     <Box width="100%" height="100vh" display="flex" flexDir="column" alignItems="center" justifyContent="space-around" bgColor="#006620">
       <Box width="80%" display="flex" justifyContent="center" alignItems="center" position="relative">
         {iconInterval === true ?
-          <Box position="absolute" left="3vw" top="8vh" display="flex" justifyContent="center" alignItems="center" flexDir="column">
-            {/* <Image src={process.env.PUBLIC_URL + "/images/homeIcon.png"} /> */}
-            <Text color="#ffffff">Sound On</Text>
+          <Box position="absolute" right="0vw" top="6vh" display="flex" justifyContent="center" alignItems="center" flexDir="column">
+            <Image width="25vw" src={process.env.PUBLIC_URL + "/images/homeIcon.png"} />
           </Box> : ""}
         <HomeTitle />
       </Box>

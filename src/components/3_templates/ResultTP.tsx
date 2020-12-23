@@ -87,7 +87,7 @@ const ResultTP = () => {
         imageOpened === false ? "" :
           <Box width="100%" display="flex" justifyContent="center" alignItems="center" flexDir="column">
             <Box width="100%" display="flex" justifyContent="center" alignItems="center">
-              <a style={{ margin: "5px", border: "3px solid #43030C", width: "31vw" }} href={process.env.PUBLIC_URL + "/images/questions2/question1.png"} download>
+              <a style={{ margin: "5px", border: "3px solid #43030C", width: "31vw" }} href={process.env.PUBLIC_URL + "/images/questions2/loading.png"} download>
                 <Image src={process.env.PUBLIC_URL + "/images/questions2/loading.png"} />
               </a>
             </Box>
