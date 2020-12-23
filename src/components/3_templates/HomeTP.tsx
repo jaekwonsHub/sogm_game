@@ -16,7 +16,11 @@ const HomeTP: FunctionComponent<IHomeTPProps> = ({
   return (
     <Box width="100%" height="100vh" display="flex" flexDir="column" alignItems="center" justifyContent="space-around" bgColor="#006620">
       <Box width="80%" display="flex" justifyContent="center" alignItems="center" position="relative">
-        {iconInterval === true ? <Image position="absolute" left="4vw" src={process.env.PUBLIC_URL + "/images/homeIcon.png"} /> : ""}
+        {iconInterval === true ?
+          <Box position="absolute" left="3vw" top="8vh" display="flex" justifyContent="center" alignItems="center" flexDir="column">
+            {/* <Image src={process.env.PUBLIC_URL + "/images/homeIcon.png"} /> */}
+            <Text color="#ffffff">Sound On</Text>
+          </Box> : ""}
         <HomeTitle />
       </Box>
       <Box display="flex" flexDir="column" justifyContent="center" alignItems="center" position="relative" width="80%">

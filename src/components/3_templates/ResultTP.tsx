@@ -66,15 +66,7 @@ const ResultTP = () => {
             }} _hover={{ bg: "" }} fontSize={[17, 25, 30, 35]} margin="" onClick={MakerOnClick} bgColor="#660210" color="#ffffff">{"<"}만든이들 보기{">"}</Button>
           {makerOpened === true ? <Text marginBottom="30px"><Image src={process.env.PUBLIC_URL + "/images/downArrowOne.png"} /></Text> : ""}
         </Box>
-        <Box marginBottom="10vw" display="flex" flexDir="column" alignItems="center" justifyContent="center">
-          <Button
-            _active={{
-              bg: "",
-              transform: "",
-              borderColor: "",
-            }} _hover={{ bg: "" }} fontSize={[17, 25, 30, 35]} margin="" onClick={ImageOnClick} bgColor="#660210" color="#ffffff">{"<"}이미지 다운받기{">"}</Button>
-          {imageOpened === true ? <Text marginBottom="30px"><Image src={process.env.PUBLIC_URL + "/images/downArrowOne.png"} /></Text> : ""}
-        </Box>
+
       </Box>
       {
         makerOpened === false ? "" :
@@ -82,28 +74,42 @@ const ResultTP = () => {
             <ResultBottom />
           </Box>
       }
+      <Box marginBottom="10vw" display="flex" flexDir="column" alignItems="center" justifyContent="center">
+        <Button
+          _active={{
+            bg: "",
+            transform: "",
+            borderColor: "",
+          }} _hover={{ bg: "" }} fontSize={[17, 25, 30, 35]} margin="" onClick={ImageOnClick} bgColor="#660210" color="#ffffff">{"<"}이미지 다운받기{">"}</Button>
+        {imageOpened === true ? <Text marginBottom="30px"><Image src={process.env.PUBLIC_URL + "/images/downArrowOne.png"} /></Text> : ""}
+      </Box>
       {
         imageOpened === false ? "" :
           <Box width="100%" display="flex" justifyContent="center" alignItems="center" flexDir="column">
+            <Box width="100%" display="flex" justifyContent="center" alignItems="center">
+              <a style={{ margin: "5px", border: "3px solid #43030C", width: "31vw" }} href={process.env.PUBLIC_URL + "/images/questions2/question1.png"} download>
+                <Image src={process.env.PUBLIC_URL + "/images/questions2/loading.png"} />
+              </a>
+            </Box>
             <Box width="100%" display="flex">
-              <a href={process.env.PUBLIC_URL + "/images/questions2/question1.png"} download>
+              <a style={{ margin: "5px", border: "3px solid #43030C" }} href={process.env.PUBLIC_URL + "/images/questions2/question1.png"} download>
                 <Image src={process.env.PUBLIC_URL + "/images/questions2/question1.png"} />
               </a>
-              <a href={process.env.PUBLIC_URL + "/images/questions2/question2.png"} download>
+              <a style={{ margin: "5px", border: "3px solid #43030C" }} href={process.env.PUBLIC_URL + "/images/questions2/question2.png"} download>
                 <Image src={process.env.PUBLIC_URL + "/images/questions2/question2.png"} />
               </a>
-              <a href={process.env.PUBLIC_URL + "/images/questions2/question3.png"} download>
+              <a style={{ margin: "5px", border: "3px solid #43030C" }} href={process.env.PUBLIC_URL + "/images/questions2/question3.png"} download>
                 <Image src={process.env.PUBLIC_URL + "/images/questions2/question3.png"} />
               </a>
             </Box>
             <Box width="100%" display="flex">
-              <a href={process.env.PUBLIC_URL + "/images/questions2/question4.png"} download>
+              <a style={{ margin: "5px", border: "3px solid #43030C" }} href={process.env.PUBLIC_URL + "/images/questions2/question4.png"} download>
                 <Image src={process.env.PUBLIC_URL + "/images/questions2/question4.png"} />
               </a>
-              <a href={process.env.PUBLIC_URL + "/images/questions2/question5.png"} download>
+              <a style={{ margin: "5px", border: "3px solid #43030C" }} href={process.env.PUBLIC_URL + "/images/questions2/question5.png"} download>
                 <Image src={process.env.PUBLIC_URL + "/images/questions2/question5.png"} />
               </a>
-              <a href={process.env.PUBLIC_URL + "/images/questions2/question6.png"} download>
+              <a style={{ margin: "5px", border: "3px solid #43030C" }} href={process.env.PUBLIC_URL + "/images/questions2/question6.png"} download>
                 <Image src={process.env.PUBLIC_URL + "/images/questions2/question6.png"} />
               </a>
             </Box>

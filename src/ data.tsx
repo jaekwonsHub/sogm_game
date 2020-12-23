@@ -32,7 +32,7 @@ var data = {
         { title: ["구여친 혹은 구남친"], isCorrect: "1" },
         { title: ["예수님"], isCorrect: "0" },
       ],
-      answer: ["예수님을 뜻하는", "헬라어 크리스토스", "‘XPIΣTOΣ’의", "첫자로 표기한 것입니다."]
+      answer: ["예수님을 뜻하는", "헬라어 크리스토스", "‘XPIΣTOΣ’의", "첫 자를 사용한 것입니다."]
     },
     {
       id: "3",
@@ -40,7 +40,7 @@ var data = {
       question: ["'기쁘다 OO오셨네'", " 빈 칸에 들어갈 가사는?"],
       stageImageURL: "5번째 스테이지 이미지",
       selections: [
-        { title: ["옥천HUB에 갇혔다가", "일주일만에 온 나의 택배"], isCorrect: "1" },
+        { title: ["옥천HUB에 갇혔다가", "일주일만에 온 나의 '택배'"], isCorrect: "1" },
         { title: ["구주"], isCorrect: "0" },
       ],
       answer: ["구주는 구세주와", " 같은 뜻으로 세상의", "구원자로 오신", "예수님을 뜻합니다."]

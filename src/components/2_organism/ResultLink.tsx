@@ -8,20 +8,19 @@ const onClick = () => {
   Kakao.Link.sendDefault({
     objectType: 'feed',
     content: {
-      title: '크잘알 능력고사',
+      title: '크잘알 테스트',
       description: "크리스마스에 대해 얼마나 알고 있는지 알아볼까요?!",
-      imageUrl:
-        'http://mud-kage.kakao.co.kr/dn/NTmhS/btqfEUdFAUf/FjKzkZsnoeE4o19klTOVI1/openlink_640x640s.jpg',
+      imageUrl: "https://christmastest.sogm.kr/" + process.env.PUBLIC_URL + "/images/linkImage.png",
       link: {
-        mobileWebUrl: 'https://sogmgame.web.app',
+        mobileWebUrl: "https://christmastest.sogm.kr/",
         androidExecParams: 'test',
       },
     },
     buttons: [
       {
-        title: '능력고사 참여하기',
+        title: '테스트 참여하기',
         link: {
-          mobileWebUrl: 'https://sogmgame.web.app',
+          mobileWebUrl: "https://christmastest.sogm.kr/",
         },
       },
     ]
@@ -30,7 +29,7 @@ const onClick = () => {
 
 
 const ResultLink = () => {
-  const url = "https://sogmgame.web.app/"
+  const url = "https://christmastest.sogm.kr/"
 
   return (
     <Box width="100%" display="flex" flexDir="column" alignItems="center" justifyContent="center" marginTop="10vh" color="#ffffff">
