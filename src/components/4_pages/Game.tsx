@@ -26,7 +26,6 @@ const Game: React.FC<RouteComponentProps<IIdParams>> = ({ match }) => {
       <GameViewTP
         id={id}
         onClick={onClick}
-
       />
     )
   } else {
